@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Dojo atmosphere</title>
+  <desc id="desc">Stylized traditional dojo interior.</desc>
+  <rect width="720" height="520" fill="#17110f"/>
+  <rect x="74" y="70" width="572" height="310" rx="24" fill="#31231d"/>
+  <rect x="120" y="112" width="160" height="206" fill="#ead7bd" opacity="0.9"/>
+  <rect x="302" y="112" width="116" height="206" fill="#ead7bd" opacity="0.72"/>
+  <rect x="440" y="112" width="160" height="206" fill="#ead7bd" opacity="0.9"/>
+  <circle cx="360" cy="213" r="64" fill="#b9271d"/>
+  <rect x="0" y="350" width="720" height="170" fill="#5b3c2b"/>
+  <path d="M0 384 H720 M0 426 H720 M0 468 H720" stroke="#e5b779" stroke-width="7" opacity="0.25"/>
+  <path d="M80 350 L0 520 M185 350 L112 520 M290 350 L226 520 M395 350 L340 520 M500 350 L454 520 M605 350 L568 520" stroke="#261511" stroke-width="6" opacity="0.32"/>
+  <text x="52" y="86" fill="#f3ece2" font-family="Georgia, serif" font-size="48" font-weight="700">Dojo Atmosphere</text>
+</svg>

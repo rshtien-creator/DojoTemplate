@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Kids karate class</title>
+  <desc id="desc">Stylized children training karate together.</desc>
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c24b28"/>
+      <stop offset="1" stop-color="#f2b35e"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" fill="url(#warm)"/>
+  <rect x="0" y="326" width="720" height="194" fill="#261511" opacity="0.76"/>
+  <path d="M72 380 H648 M118 430 H602 M164 480 H556" stroke="#ffe2b8" stroke-width="7" opacity="0.28"/>
+  <g fill="#fff4e8">
+    <circle cx="238" cy="180" r="24"/>
+    <path d="M206 210 H270 L292 333 H254 L248 272 H230 L222 333 H184 Z"/>
+    <path d="M210 225 L132 281 L110 251 L198 194 Z"/>
+    <path d="M266 226 L358 273 L375 239 L276 194 Z"/>
+    <circle cx="468" cy="181" r="24"/>
+    <path d="M436 211 H500 L522 334 H484 L478 273 H460 L452 334 H414 Z"/>
+    <path d="M440 226 L352 272 L335 238 L430 194 Z"/>
+    <path d="M496 226 L586 281 L607 251 L508 194 Z"/>
+  </g>
+  <text x="52" y="88" fill="#fff4e8" font-family="Georgia, serif" font-size="48" font-weight="700">Kids Class</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Kata practice</title>
+  <desc id="desc">Stylized karate student practicing kata in a warm dojo.</desc>
+  <rect width="720" height="520" fill="#211613"/>
+  <circle cx="560" cy="120" r="84" fill="#bd2d23"/>
+  <path d="M0 355 C144 301 235 332 363 359 C497 388 593 349 720 287 V520 H0 Z" fill="#3d291f"/>
+  <path d="M96 404 H624" stroke="#d39b61" stroke-width="7" opacity="0.35"/>
+  <path d="M147 447 H573" stroke="#d39b61" stroke-width="7" opacity="0.24"/>
+  <g fill="#f3ece2">
+    <circle cx="338" cy="176" r="28"/>
+    <path d="M300 210 H376 L398 346 H354 L346 279 H330 L322 346 H278 Z"/>
+    <path d="M305 225 L188 267 L172 229 L298 190 Z"/>
+    <path d="M372 225 L493 279 L513 242 L380 190 Z"/>
+    <path d="M311 341 L248 456 L209 435 L275 320 Z"/>
+    <path d="M364 341 L425 456 L464 435 L400 320 Z"/>
+  </g>
+  <text x="52" y="86" fill="#f3ece2" font-family="Georgia, serif" font-size="48" font-weight="700">Kata Practice</text>
+</svg>

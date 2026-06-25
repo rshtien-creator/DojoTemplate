@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Kumite practice</title>
+  <desc id="desc">Stylized karate partner practice.</desc>
+  <defs>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#203a43"/>
+      <stop offset="1" stop-color="#0f2027"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" fill="url(#cool)"/>
+  <circle cx="360" cy="168" r="116" fill="#f2b35e" opacity="0.16"/>
+  <rect x="0" y="344" width="720" height="176" fill="#101719" opacity="0.8"/>
+  <g fill="#f4efe8">
+    <circle cx="253" cy="186" r="25"/>
+    <path d="M218 218 H286 L307 343 H268 L260 281 H245 L236 343 H196 Z"/>
+    <path d="M284 232 L402 258 L394 296 L276 266 Z"/>
+    <path d="M219 232 L138 294 L113 263 L209 199 Z"/>
+    <path d="M233 338 L176 456 L137 437 L198 319 Z"/>
+    <path d="M282 338 L345 456 L384 436 L317 319 Z"/>
+    <circle cx="480" cy="188" r="25"/>
+    <path d="M445 220 H513 L534 345 H495 L487 283 H472 L463 345 H423 Z"/>
+    <path d="M445 236 L332 257 L339 296 L455 270 Z"/>
+    <path d="M510 233 L596 291 L620 260 L520 200 Z"/>
+    <path d="M460 340 L397 456 L359 435 L427 321 Z"/>
+    <path d="M508 340 L570 456 L609 436 L543 321 Z"/>
+  </g>
+  <text x="52" y="88" fill="#f4efe8" font-family="Georgia, serif" font-size="48" font-weight="700">Kumite Practice</text>
+</svg>

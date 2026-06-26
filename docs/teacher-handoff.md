@@ -4,6 +4,18 @@ This website is designed to avoid maintenance work.
 
 The website itself is static. It has no database, no admin panel, no website passwords, and no payment service. The only things the teacher manages are normal Google tools.
 
+The current site is a bilingual English/Dutch demo. Keep all teacher-specific real data out of the site until the final replacement phase.
+
+## Free Demo Link
+
+GitHub Pages can host the demo for free at:
+
+```text
+https://rshtien-creator.github.io/DojoTemplate/
+```
+
+This is enough for opening the site on a phone and sharing it with people. A custom domain is optional and not needed for the demo.
+
 ## What The Teacher Controls
 
 ### Google Calendar

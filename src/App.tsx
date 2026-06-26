@@ -11,6 +11,7 @@ import {
   MapPin,
   MessageCircle,
   Navigation,
+  Phone,
   ShieldCheck,
   Smartphone,
   X,
@@ -202,11 +203,14 @@ function App() {
               <article className="class-card" key={dojoClass.name}>
                 <p className="pill">{dojoClass.ages}</p>
                 <h3>{dojoClass.name}</h3>
+                <div className="class-schedule">
+                  <span>
+                    <CalendarDays size={16} />
+                    {dojoClass.days}
+                  </span>
+                  <strong>{dojoClass.time}</strong>
+                </div>
                 <p>{dojoClass.description}</p>
-                <span>
-                  <Clock size={16} />
-                  {dojoClass.schedule}
-                </span>
               </article>
             ))}
           </div>
@@ -277,6 +281,22 @@ function App() {
           </div>
         </section>
 
+        <section className="section faq-section" id="faq">
+          <div className="section-heading">
+            <p className="eyebrow">{content.eyebrow.faq}</p>
+            <h2>{content.faqHeading}</h2>
+            <p>{content.faqBody}</p>
+          </div>
+          <div className="faq-grid">
+            {content.faqItems.map((item) => (
+              <article className="faq-card" key={item.question}>
+                <h3>{item.question}</h3>
+                <p>{item.answer}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="section contact" id="contact">
           <div>
             <p className="eyebrow">{content.eyebrow.contact}</p>
@@ -299,9 +319,30 @@ function App() {
         </section>
       </main>
 
-      <footer>
-        <span>{dojoBase.name}</span>
-        <span>{content.footerNote}</span>
+      <footer className="site-footer">
+        <div>
+          <span className="footer-brand">{dojoBase.name}</span>
+          <p>{content.footerNote}</p>
+        </div>
+        <div className="footer-links">
+          <a href={`mailto:${dojoBase.contact.email}`}>
+            <Mail size={16} />
+            {dojoBase.contact.email}
+          </a>
+          <a href={dojoBase.contact.whatsapp} target="_blank" rel="noreferrer">
+            <Phone size={16} />
+            WhatsApp
+          </a>
+          <a href={dojoBase.google.mapsUrl} target="_blank" rel="noreferrer">
+            <MapPin size={16} />
+            {dojoBase.contact.address}
+          </a>
+          <a href={dojoBase.google.calendarPublicUrl} target="_blank" rel="noreferrer">
+            <CalendarDays size={16} />
+            {dojoBase.google.calendarName}
+          </a>
+        </div>
+        <small>© {new Date().getFullYear()} {dojoBase.name}</small>
       </footer>
     </div>
   );

@@ -1,6 +1,8 @@
 export type DojoClass = {
   name: string;
   ages: string;
+  days: string;
+  time: string;
   schedule: string;
   description: string;
 };
@@ -28,6 +30,11 @@ export type HomeCard = {
   href: string;
 };
 
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type Language = "en" | "nl";
 
 export type LocalizedDojoContent = {
@@ -40,6 +47,7 @@ export type LocalizedDojoContent = {
     calendar: string;
     gallery: string;
     forms: string;
+    faq: string;
     contact: string;
   };
   tagline: string;
@@ -68,6 +76,8 @@ export type LocalizedDojoContent = {
   galleryCta: string;
   formsHeading: string;
   formsBody: string;
+  faqHeading: string;
+  faqBody: string;
   downloadLabel: string;
   contactHeading: string;
   footerNote: string;
@@ -78,6 +88,7 @@ export type LocalizedDojoContent = {
     bio: string;
   };
   classes: DojoClass[];
+  faqItems: FaqItem[];
   forms: DojoForm[];
   gallery: GalleryImage[];
 };
@@ -115,6 +126,7 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
       { label: "Calendar", href: "calendar" },
       { label: "Gallery", href: "gallery" },
       { label: "Forms", href: "forms" },
+      { label: "FAQ", href: "faq" },
       { label: "Contact", href: "contact" },
     ],
     eyebrow: {
@@ -125,6 +137,7 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
       calendar: "Dojo Calendar",
       gallery: "Gallery",
       forms: "Student forms",
+      faq: "FAQ",
       contact: "Contact",
     },
     tagline: "Traditional karate training for focus, confidence, and discipline.",
@@ -211,6 +224,8 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
     formsHeading: "Prepare for your first lesson.",
     formsBody:
       "Download the forms and information pack before your first visit, or contact the dojo if you have questions.",
+    faqHeading: "Questions before the first class.",
+    faqBody: "Simple answers for parents, new students, and visitors.",
     downloadLabel: "Download",
     contactHeading: "Ask a question or plan your first visit.",
     footerNote: "Traditional karate training for focus, confidence, and discipline.",
@@ -224,21 +239,45 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
     {
       name: "Kids Karate",
       ages: "Ages 6-11",
+      days: "Monday & Wednesday",
+      time: "17:00-17:50",
       schedule: "Monday & Wednesday, 17:00-17:50",
       description: "A playful but focused class for movement, listening skills, confidence, and karate basics.",
     },
     {
       name: "Youth Karate",
       ages: "Ages 12-16",
+      days: "Tuesday & Thursday",
+      time: "18:15-19:15",
       schedule: "Tuesday & Thursday, 18:15-19:15",
       description: "Structured training for stronger technique, self-control, partner drills, and grading preparation.",
     },
     {
       name: "Adults Karate",
       ages: "Adults",
+      days: "Tuesday & Thursday",
+      time: "20:00-21:15",
       schedule: "Tuesday & Thursday, 20:00-21:15",
       description: "Traditional karate for fitness, practical movement, stress relief, and long-term self-development.",
     },
+    ],
+    faqItems: [
+      {
+        question: "Can beginners join?",
+        answer: "Yes. New students can watch a lesson or join a trial class. The instructor will explain what to do step by step.",
+      },
+      {
+        question: "What should my child bring?",
+        answer: "Comfortable sports clothing and a water bottle are enough for the first lesson. A karate gi can be arranged later.",
+      },
+      {
+        question: "Do class times change during holidays?",
+        answer: "Sometimes. The class cards show the regular schedule, but the public calendar is the best place to check changes.",
+      },
+      {
+        question: "Where is the dojo?",
+        answer: "Training is listed at Winkelcentrum Westwijk Amstelveen, Westwijkplein, 1187 LV Amstelveen. Use the Maps link before visiting.",
+      },
     ],
     forms: [
     {
@@ -295,6 +334,7 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
       { label: "Agenda", href: "calendar" },
       { label: "Galerij", href: "gallery" },
       { label: "Formulieren", href: "forms" },
+      { label: "FAQ", href: "faq" },
       { label: "Contact", href: "contact" },
     ],
     eyebrow: {
@@ -305,6 +345,7 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
       calendar: "Dojo agenda",
       gallery: "Galerij",
       forms: "Formulieren",
+      faq: "FAQ",
       contact: "Contact",
     },
     tagline: "Karate voor focus, vertrouwen en discipline.",
@@ -391,6 +432,8 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
     formsHeading: "Bereid je voor op je eerste les.",
     formsBody:
       "Download de formulieren en het informatiepakket voor je eerste bezoek, of neem contact op met de dojo als je vragen hebt.",
+    faqHeading: "Vragen voor de eerste les.",
+    faqBody: "Korte antwoorden voor ouders, nieuwe leerlingen en bezoekers.",
     downloadLabel: "Download",
     contactHeading: "Stel een vraag of plan je eerste bezoek.",
     footerNote: "Traditionele karatetraining voor focus, zelfvertrouwen en discipline.",
@@ -404,20 +447,44 @@ export const dojoContent: Record<Language, LocalizedDojoContent> = {
       {
         name: "Karate voor kinderen",
         ages: "Leeftijd 6-11",
+        days: "Maandag en woensdag",
+        time: "17:00-17:50",
         schedule: "Maandag en woensdag, 17:00-17:50",
         description: "Een speelse maar gerichte les voor beweging, luisteren, zelfvertrouwen en karatebasis.",
       },
       {
         name: "Karate voor jeugd",
         ages: "Leeftijd 12-16",
+        days: "Dinsdag en donderdag",
+        time: "18:15-19:15",
         schedule: "Dinsdag en donderdag, 18:15-19:15",
         description: "Gestructureerde training voor sterkere techniek, zelfbeheersing, partneroefeningen en examens.",
       },
       {
         name: "Karate voor volwassenen",
         ages: "Volwassenen",
+        days: "Dinsdag en donderdag",
+        time: "20:00-21:15",
         schedule: "Dinsdag en donderdag, 20:00-21:15",
         description: "Traditionele karate voor conditie, praktische beweging, ontspanning en persoonlijke ontwikkeling.",
+      },
+    ],
+    faqItems: [
+      {
+        question: "Kunnen beginners meedoen?",
+        answer: "Ja. Nieuwe leerlingen kunnen een les bekijken of een proefles volgen. De instructeur legt stap voor stap uit wat je doet.",
+      },
+      {
+        question: "Wat moet mijn kind meenemen?",
+        answer: "Voor de eerste les zijn sportkleding en een waterfles genoeg. Een karatepak kan later worden geregeld.",
+      },
+      {
+        question: "Veranderen lestijden tijdens vakanties?",
+        answer: "Soms. De leskaarten tonen het vaste schema, maar de publieke agenda is de beste plek om wijzigingen te controleren.",
+      },
+      {
+        question: "Waar is de dojo?",
+        answer: "De training staat vermeld bij Winkelcentrum Westwijk Amstelveen, Westwijkplein, 1187 LV Amstelveen. Gebruik de Maps-link voordat je langskomt.",
       },
     ],
     forms: [
